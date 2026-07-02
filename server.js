@@ -31,6 +31,7 @@ app.use("/api/auth", require("./routes/forgotPassword"));
 app.use("/api/food", require("./routes/food"));
 app.use("/api/cart", require("./routes/cart"));
 app.use("/api/orders", require("./routes/orders"));
+app.use("/api/contact", require("./routes/contact"));
 
 // MongoDB Connection
 mongoose
