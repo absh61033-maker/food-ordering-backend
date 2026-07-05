@@ -25,7 +25,7 @@ router.post("/register", async (req, res) => {
         `<div style="font-family:sans-serif;max-width:480px;margin:auto;padding:30px;border-radius:12px;border:1px solid #eee">
           <h2 style="color:#ff6b35">🍔 Welcome to FoodZone, ${name}!</h2>
           <p>Your account has been created successfully. Now you can order your favourite food!</p>
-          <a href="http://localhost:3000" style="display:inline-block;margin:20px 0;padding:12px 28px;background:#ff6b35;color:white;border-radius:8px;text-decoration:none;font-weight:bold">Order Now 🍕</a>
+          <a href="https://food-ordering-frontend-eta.vercel.app" style="display:inline-block;margin:20px 0;padding:12px 28px;background:#ff6b35;color:white;border-radius:8px;text-decoration:none;font-weight:bold">Order Now 🍕</a>
           <p style="color:#888;font-size:13px">FoodZone Team</p>
         </div>`
       );

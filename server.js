@@ -14,7 +14,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: [
-    "http://localhost:3000",
+   "https://food-ordering-frontend-eta.vercel.app",
     "http://localhost:3001",
     "https://food-ordering-frontend-eta.vercel.app",
     "https://food-zone-bay.vercel.app"

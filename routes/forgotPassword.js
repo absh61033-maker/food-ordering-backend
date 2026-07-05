@@ -13,7 +13,7 @@ router.post("/forgot", async (req, res) => {
     if (!user) return res.json({ success: false, message: "Email not found" });
 
     const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "15m" });
-    const resetLink = `http://localhost:3000/reset-password/${token}`;
+   const resetLink = `https://food-ordering-frontend-eta.vercel.app/reset-password/${token}`;
 
     await sendEmail(
       email,
