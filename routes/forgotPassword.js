@@ -20,9 +20,9 @@ router.post("/forgot", async (req, res) => {
       "FoodZone — Password Reset Request",
       `<div style="font-family:sans-serif;max-width:480px;margin:auto;padding:30px;border-radius:12px;border:1px solid #eee">
         <h2 style="color:#ff6b35">🍔 FoodZone</h2>
-        <p>Aapne password reset request ki hai. Neeche wale button pe click karke naya password set karo:</p>
+       <p>You requested a password reset. Click the button below to set a new password:</p>
         <a href="${resetLink}" style="display:inline-block;margin:20px 0;padding:12px 28px;background:#ff6b35;color:white;border-radius:8px;text-decoration:none;font-weight:bold">Reset Password</a>
-        <p style="color:#888;font-size:13px">Yeh link sirf 15 minute tak valid hai. Agar aapne request nahi ki, to is email ko ignore kar do.</p>
+       <p style="color:#888;font-size:13px">This link is valid for 15 minutes only. If you didn't request this, please ignore this email.</p>
       </div>`
     );
 
@@ -32,7 +32,7 @@ router.post("/forgot", async (req, res) => {
   }
 });
 
-// Reset Password — naya password save karo
+// Reset Password — save new password
 router.post("/reset/:token", async (req, res) => {
   try {
     const { token } = req.params;
